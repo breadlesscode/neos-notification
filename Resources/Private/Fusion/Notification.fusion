@@ -1,0 +1,24 @@
+prototype(Breadlesscode.Components:Notification) < prototype(PackageFactory.AtomicFusion:Component) {
+    @context.config = ${ Configuration.setting('Breadlesscode.Notification') }
+    # danger, warning or info
+    type = ${ 'info' }
+    content = ${ '' }
+    onlyRenderInBackend = ${ false }
+    # css classes
+    baseClass = ${ config.classes.base }
+    containerClass = ${ AtomicFusion.classNames(
+        this.baseClass,
+        config.classes[this.type] ? config.classes[this.type] : this.baseClass + '--' + this.type
+    ) }
+    contentClass = ${ config.classes.content ? config.classes.content : this.baseClass + '__' + 'content' }
+    # condition for only rendering in backend if onlyRenderInBackend is true
+    @if.onlyBackend = ${ (this.onlyRenderInBackend && node.context.inBackend) || !this.onlyRenderInBackend }
+
+    renderer = Neos.Fusion:Tag {
+        attributes.class =  ${ props.containerClass }
+        content = Neos.Fusion:Tag {
+            attributes.class = ${ props.contentClass }
+            content = ${props.content}
+        }
+    }
+}

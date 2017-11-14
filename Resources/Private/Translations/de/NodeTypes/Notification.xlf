@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="Breadlesscode.Notification" source-language="de" datatype="plaintext">
+        <body>
+            <trans-unit id="ui.label" xml:space="preserve">
+                <source>Benachrichtigung</source>
+            </trans-unit>
+            <trans-unit id="groups.notification" xml:space="preserve">
+                <source>Benachrichtigung</source>
+            </trans-unit>
+            <trans-unit id="properties.type" xml:space="preserve">
+                <source>Typ</source>
+            </trans-unit>
+            <trans-unit id="properties.type.selectBoxEditor.values.info" xml:space="preserve">
+                <source>Info</source>
+            </trans-unit>
+            <trans-unit id="properties.type.selectBoxEditor.values.warning" xml:space="preserve">
+                <source>Warnung</source>
+            </trans-unit>
+            <trans-unit id="properties.type.selectBoxEditor.values.danger" xml:space="preserve">
+                <source>Gefahr</source>
+            </trans-unit>
+            <trans-unit id="properties.onlyRenderInBackend" xml:space="preserve">
+                <source>Nur im Backend anzeigen?</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

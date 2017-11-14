@@ -1,0 +1,47 @@
+'Breadlesscode.Notification:Notification':
+  superTypes:
+    'Neos.Neos:Content': true
+  ui:
+    label: i18n
+    group: 'general'
+    icon: 'icon-info-circle'
+    inspector:
+      groups:
+        notification:
+          label: i18n
+          tab: 'default'
+          position: 990
+  properties:
+    content:
+      type: 'string'
+      ui:
+        inlineEditable: true
+      validation:
+        'Neos.Neos/Validation/StringLengthValidator':
+          minimum: 1
+          maximum: 255
+    type:
+      type: 'string'
+      defaultValue: 'info'
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: 'notification'
+          editor: 'Neos.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              info:
+                label: i18n
+              warning:
+                label: i18n
+              danger:
+                label: i18n
+    onlyRenderInBackend:
+      type: 'boolean'
+      defaultValue: false
+      ui:
+        label: i18n
+        reloadIfChanged: false
+        inspector:
+          group: 'notification'

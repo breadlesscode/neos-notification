@@ -1,0 +1,14 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          Breadlesscode.Notification:
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        Breadlesscode.Notification: true
+Breadlesscode:
+  Notification:
+    classes:
+      base: 'notification'

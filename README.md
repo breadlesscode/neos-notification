@@ -1,0 +1,35 @@
+# NEOS notifications
+![Latest Stable Version](https://poser.pugx.org/breadlesscode/notification/v/stable)
+![Downloads](https://img.shields.io/packagist/dt/breadlesscode/notification.svg)
+![License](https://poser.pugx.org/breadlesscode/notification/license)
+
+This package includes a notification compoment and a notification node type for the backend.
+
+## Installation
+```
+composer require breadlesscode\notification
+```
+## Configuration
+```yaml
+Breadlesscode:
+  Notification:
+    classes:
+      base: 'alert' # if you only set base class, BEM naming is used
+      content: 'alert-content'
+      info: 'alert-info'
+      warning: 'alert-warning'
+      danger: 'alert-danger'
+```
+## Usage
+You can use the component like this in fusion:
+```
+    notification = Breadlesscode.Components:Notification {
+        onlyRenderInBackend = ${ false }
+        type = 'info'
+        content 'Hello world'
+        # and you can override the class configuration
+        baseClass = 'notification' # for BEM naming
+        contentClass = 'notification__content'
+        containerClass = 'notification'
+    }
+```
