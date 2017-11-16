@@ -1,7 +1,7 @@
 # NEOS notifications
-![Latest Stable Version](https://poser.pugx.org/breadlesscode/notification/v/stable)
-![Downloads](https://img.shields.io/packagist/dt/breadlesscode/notification.svg)
-![License](https://poser.pugx.org/breadlesscode/notification/license)
+![Latest Stable Version](https://poser.pugx.org/breadlesscode/neos-notification/v/stable)
+![Downloads](https://img.shields.io/packagist/dt/breadlesscode/neos-notification.svg)
+![License](https://poser.pugx.org/breadlesscode/neos-notification/license)
 
 This package includes a notification compoment and a notification node type for the backend.
 
