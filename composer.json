@@ -1,6 +1,7 @@
 {
     "description": "",
     "type": "neos-plugin",
+    "license": "MIT",
     "name": "breadlesscode/neos-notification",
     "require": {
         "neos/flow": "*"
