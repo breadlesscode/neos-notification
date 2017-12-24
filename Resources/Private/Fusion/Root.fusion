@@ -1,11 +1,3 @@
-include: Notification.fusion
+include: Components/**/*
+include: NodeTypes/**/*
 
-prototype(Breadlesscode.Notification:Notification) < prototype(PackageFactory.AtomicFusion:Content) {
-    renderer = Breadlesscode.Components:Notification {
-        content = PackageFactory.AtomicFusion:Editable {
-            property = 'content'
-        }
-        type = ${ q(node).property('type') }
-        onlyRenderInBackend = ${ q(node).property('onlyRenderInBackend') }
-    }
-}
