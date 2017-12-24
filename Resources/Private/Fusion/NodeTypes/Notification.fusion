@@ -1,0 +1,9 @@
+prototype(Breadlesscode.Notification:Notification) < prototype(Neos.Neos:ContentComponent) {
+    renderer = Breadlesscode.Notification:NotificationComponent {
+        content = Neos.Neos:Editable {
+            property = 'content'
+        }
+        type = ${ q(node).property('type') }
+        onlyRenderInBackend = ${ q(node).property('onlyRenderInBackend') }
+    }
+}

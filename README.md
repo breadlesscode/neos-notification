@@ -33,3 +33,7 @@ You can use the component like this in fusion:
         containerClass = 'notification'
     }
 ```
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.

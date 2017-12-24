@@ -4,7 +4,8 @@
     "license": "MIT",
     "name": "breadlesscode/neos-notification",
     "require": {
-        "neos/flow": "*"
+        "neos/flow": "*",
+        "neos/neos": ">=3.3"
     },
     "autoload": {
         "psr-4": {
